@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <PackageProjectUrl>https://github.com/CUSTIS-public/CUSTIS.i18n.DAL</PackageProjectUrl>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ProductInfo.cs" Link="Properties\ProductInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Iesi.Collections" Version="4.0.2" />
+    <PackageReference Include="NHibernate" Version="4.0.0.4000" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CUSTIS.I18N.DAL\CUSTIS.I18N.DAL.csproj" />
+    <ProjectReference Include="..\CUSTIS.I18N\CUSTIS.I18N\CUSTIS.I18N.netstandard.csproj" />
+  </ItemGroup>
+  
+</Project>

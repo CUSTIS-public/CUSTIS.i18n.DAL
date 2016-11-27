@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <PackageProjectUrl>https://github.com/CUSTIS-public/CUSTIS.i18n.DAL</PackageProjectUrl>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\ProductInfo.cs" Link="Properties\ProductInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.8.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CUSTIS.I18N.DAL\CUSTIS.I18N.DAL.csproj" />
+    <ProjectReference Include="..\CUSTIS.I18N.SampleDomainModel\CUSTIS.I18N.SampleDomainModel.csproj" />
+    <ProjectReference Include="..\CUSTIS.I18N\CUSTIS.I18N\CUSTIS.I18N.netstandard.csproj" />
+  </ItemGroup>
+  
+</Project>
